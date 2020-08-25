@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&display=swap');
+
+            /**     font-family: 'Roboto', sans-serif;        **/ 
+            /**     font-family: 'Poppins', sans-serif;       **/
+            /**     font-family: 'Staatliches', cursive;      **/
+            /**     font-family: 'Cairo', sans-serif;         **/
+            
+:root{
+    --Dark-lighter: #222326;
+    --Org-dark: #f59b23;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --Roboto: 'Roboto', sans-serif; 
+    --Poppins: 'Poppins', sans-serif;
+    --Cairo: 'Cairo', sans-serif;
+    --Staatliches: 'Staatliches', cursive;
+}        
+
+    /*****************************************************************************/
+    /*              Here start the css main code for the main page               */
+    /****xxxxxxxxxxx***********************************************xxxxxxxxxxx****/
+
+ *{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }   
+ body{
+     background: var(--light);
+     font-family: var(--Poppins);  
+ }
+ header .main-title{
+     text-align: center;
+     margin-top: 50px;
+ }
+ .search-bar{
+     text-align: center;
+     margin: 75px 50px;
+ }
+ .search-bar input[type="text"]{
+     border: none;
+     background: rgba(189, 188, 188, 0.37);
+     padding: 17px 17px;
+     border-radius: 5px;
+     width: 35%;
+     color: var(--dark);
+     font-family: var(--Poppins);
+     font-weight: 600;
+ }
+ .search-bar button{
+     background: none;
+     border: none;
+     position: relative;
+     left: -3%;
+     top: 50%;
+     transform: translate(-40%,30%);
+ }
+ .row{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+ }
+ .row .img{
+     width: 25%;
+     float: left;
+     border-radius: 3px;
+    margin: 20px;
+    box-shadow: 0 8px 8px 8px rgba(0, 0, 0, 0.2);
+ }
+ .row .img:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 600ms;
+ }
+  
+
+
+    /*****************************************************************************/
+    /*              Here start the Media main code for the main page               */
+    /****xxxxxxxxxxx***********************************************xxxxxxxxxxx****/
+
+
+    @media screen and (max-width: 768px){
+        .search-bar input[type="text"]{
+            width: 55%;
+        }
+        .search-bar button{
+            background: none;
+            border: none;
+            position: relative;
+            left: -3%;
+            top: 50%;
+            transform: translate(-70%,30%);
+        }
+    }
+
+    @media screen and (max-width: 425px){
+        .search-bar input[type="text"]{
+            width: 100%;
+        }
+        .search-bar button{
+            background: none;
+            border: none;
+            position: relative;
+            left: 35%;
+            top: 50%;
+            transform: translate(50%,-130%);
+        }
+    }
+    
+    @media screen and (max-width: 600px) {
+        .row .img{
+            width: 80%;
+            display: block;
+        }
+      }
